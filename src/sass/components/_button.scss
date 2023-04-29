@@ -1,0 +1,49 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 175px;
+  padding: 16px 0;
+  border-radius: 5px;
+  font-size: 18px;
+  line-height: 25px;
+
+  .button-svg {
+    margin-right: 8px;
+    width: 9px;
+    height: 18px;
+  }
+  #angle-right {
+    margin-right: 8px;
+    width: 9px;
+    height: 18px;
+    fill: $icon-button-color;
+  }
+}
+.button--accent-color {
+  color: $text-white-color;
+  background-color: $bg-button-accent;
+  transition: background-color 0.25s ease-out;
+  &:hover,
+  &:focus,
+  &:active {
+    transition: background-color 0.25s ease-out;
+    background-color: $bg-button-accent-hover;
+  }
+  .button_svg {
+    fill: $text-white-color;
+  }
+}
+.button--transparent-color {
+  border: 1px solid $border-white-color;
+  color: $text-white-color;
+  background-color: transparent;
+  transition: all 0.25s ease-out;
+  &:hover,
+  &:focus {
+    border: 1px solid $border-accent-color;
+    color: $text-accent-color;
+    background-color: $bg-light-color;
+    transition: all 0.25s ease-out;
+  }
+}

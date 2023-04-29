@@ -1,0 +1,26 @@
+.footer {
+  padding: 20px 0;
+  text-align: center;
+  background-color: $bg-footer-color;
+  color: $text-white-color;
+  .footer_icons-wrap {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 12px;
+  }
+  .footer_icon {
+    width: 40px;
+    height: 35px;
+    fill: $icon-footer-color;
+    transition: all 0.25s;
+    &:not(:last-child) {
+      margin-right: 25px;
+    }
+
+    &:hover,
+    &:focus {
+      fill: $icon-footer-hover-color;
+    }
+  }
+}

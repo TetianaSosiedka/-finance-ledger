@@ -1,0 +1,31 @@
+.section_blog {
+  .container {
+    background-color: $bg-accent-second-color;
+  }
+  .section_wrap {
+    color: $text-white-color;
+    padding-top: 48px;
+    padding-bottom: 58px;
+  }
+  .button--transparent-color {
+    width: 185px;
+    &:hover,
+    &:focus {
+      border: 1px solid $border-accent-second-color;
+      color: $text-accent-second-color;
+      background-color: $bg-light-color;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .section_wrap {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+  }
+  @media screen and (min-width: 1360px) {
+    .section_wrap {
+      padding-top: 80px;
+      padding-bottom: 80px;
+    }
+  }
+}

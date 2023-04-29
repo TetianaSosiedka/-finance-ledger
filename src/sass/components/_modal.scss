@@ -1,0 +1,49 @@
+.backdrop {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: $bg-modal-color;
+  backdrop-filter: blur(5px);
+  @media screen and (min-width: 768px) {
+    overflow: scroll;
+  }
+  z-index: 999;
+}
+
+.modal_window {
+  overflow-x: hidden;
+  overflow-y: auto;
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-height: 100%;
+  padding: 30px;
+  border-radius: 5px;
+  background-color: $bg-light-color;
+  @media screen and (min-width: 768px) {
+    overflow-x: visible;
+    overflow-y: visible;
+  }
+}
+.modat_title {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.modal_text {
+  margin-bottom: 20px;
+}
+
+.modal_button-back {
+  font-size: 16px;
+  font-weight: 600;
+  color: $text-accent-color;
+}

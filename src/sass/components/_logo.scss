@@ -1,0 +1,47 @@
+.logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+  transition: transform 0.5s;
+  &:hover,
+  &:focus {
+    transform: scale(1.1);
+  }
+  .logo_svg {
+    width: 39px;
+    height: 35px;
+    margin-right: 8px;
+  }
+  .logo_header {
+    font-size: 28px;
+    line-height: 38px;
+    letter-spacing: 0.02em;
+    color: $text-white-color;
+  }
+  .logo-header-accent {
+    color: $text-accent-color;
+    margin-right: 8px;
+  }
+  @media screen and (min-width: 768px) {
+    .logo_svg {
+      width: 40px;
+      height: 30px;
+      margin-right: 9px;
+    }
+    .logo_header {
+      font-size: 35px;
+      line-height: 48px;
+    }
+    .logo-header-accent {
+      margin-right: 9px;
+    }
+  }
+  @media screen and (min-width: 1360px) {
+    .logo_svg {
+      margin-right: 4px;
+    }
+    .logo-header-accent {
+      margin-right: 4px;
+    }
+  }
+}

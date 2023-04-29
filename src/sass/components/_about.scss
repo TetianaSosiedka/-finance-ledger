@@ -1,0 +1,21 @@
+.section_about {
+  .container {
+    background-color: $bg-accent-first-color;
+  }
+  .section_wrap {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  @media screen and (min-width: 768px) {
+    .section_wrap {
+      padding-top: 62px;
+      padding-bottom: 62px;
+    }
+  }
+  @media screen and (min-width: 1360px) {
+    .section_wrap {
+      padding-top: 80px;
+      padding-bottom: 86px;
+    }
+  }
+}
