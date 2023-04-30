@@ -24,6 +24,11 @@
       margin-bottom: 0;
     }
   }
+  .section_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 
   @media screen and (min-width: 768px) {
     .container {
@@ -46,8 +51,6 @@
       line-height: 48px;
     }
     .section_list {
-      display: flex;
-      flex-wrap: wrap;
       margin: -5px -37px;
     }
     .section_item {
