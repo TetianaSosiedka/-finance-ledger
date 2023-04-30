@@ -1,6 +1,5 @@
 import Container from './Container';
-
-import { casesImages } from 'constants/casesImges';
+import ImageGallery from './ImagesGallery';
 
 const Cases = () => {
   return (
@@ -14,25 +13,7 @@ const Cases = () => {
             sapiente!
           </p>
         </div>
-        <ul className="section_list">
-          {casesImages.map(
-            ({ casesJpg, casesJpg2x, casesWebp, casesWebp2x }) => (
-              <li key={casesJpg} className="section_item">
-                <picture className="mcases_image">
-                  <source
-                    srcSet={`${casesJpg} 1x, ${casesJpg2x} 2x`}
-                    type="image/webp"
-                  />
-                  <source
-                    srcSet={`${casesWebp} 1x, ${casesWebp2x} 2x`}
-                    type="image/jpeg"
-                  />
-                  <img src={casesJpg} alt="case" />
-                </picture>
-              </li>
-            )
-          )}
-        </ul>
+        <ImageGallery />
       </Container>
     </section>
   );

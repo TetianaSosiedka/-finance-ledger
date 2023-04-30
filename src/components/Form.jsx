@@ -1,7 +1,7 @@
 import { useFormik } from 'formik';
 
 import Button from './Button';
-import { ValidationShema } from 'felpers/ValidationShema';
+import { ValidationShema } from 'helpers/ValidationShema';
 
 const Form = ({ getFormDate }) => {
   const onSubmit = async (values, actions) => {

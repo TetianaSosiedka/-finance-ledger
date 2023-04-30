@@ -1,0 +1,65 @@
+.gallery {
+  .cases_image {
+    opacity: 100%;
+    transition: opacity 0.25s ease-out;
+    &:hover,
+    &:focus {
+      opacity: 0.8;
+    }
+  }
+  .gallery_modal-content {
+    position: relative;
+
+    img {
+      display: flex;
+      width: calc(85vh);
+      height: auto;
+    }
+  }
+  .gallery_arrow-prev {
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    left: 0;
+    &:hover,
+    &:focus {
+      img {
+        opacity: 100%;
+      }
+    }
+    img {
+      position: absolute;
+      left: -5px;
+      bottom: 50%;
+      width: 35px;
+      opacity: 0;
+      transition: opacity 0.25s ease-out;
+    }
+  }
+  .gallery_arrow-next {
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    right: 0;
+    &:hover,
+    &:focus {
+      img {
+        opacity: 100%;
+      }
+    }
+    img {
+      position: absolute;
+      right: -5px;
+      bottom: 50%;
+      width: 35px;
+      opacity: 0;
+      transition: opacity 0.25s ease-out;
+    }
+  }
+  .gallery_arrow-close {
+    width: 25px;
+    position: absolute;
+    right: 10px;
+    top: -35px;
+  }
+}
