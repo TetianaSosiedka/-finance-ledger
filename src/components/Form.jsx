@@ -27,7 +27,7 @@ const Form = ({ getFormDate }) => {
     onSubmit,
   });
   return (
-    <form className="form" onSubmit={handleSubmit} autoComplete="on">
+    <form className="form" onSubmit={handleSubmit} autoComplete="on" netlify>
       <div className="form_group">
         <input
           id="name"
